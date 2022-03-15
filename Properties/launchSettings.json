@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BuilderWire": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\Gelsomino\\Downloads\\BuilderWireCodingChallenge-012022\\BuilderWireCodingChallenge-012022\\Input\\Article.txt C:\\Users\\Gelsomino\\Downloads\\BuilderWireCodingChallenge-012022\\BuilderWireCodingChallenge-012022\\Input\\Words.txt"
+    }
+  }
+}
