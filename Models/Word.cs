@@ -1,15 +1,30 @@
 ﻿namespace BuilderWire.Models
 {
-    public class Word
+    public class Word : Base
     {
-        public string Text { get; set; }
-
-        public string TransformedText
+        public override string TransformedText
         {
-            get
-            {
-                return Text.Replace(".", string.Empty);
-            }
+            get => Text?
+                .Replace("/", string.Empty)
+                .Replace("`", string.Empty)
+                .Replace("!", string.Empty)
+                .Replace("@", string.Empty)
+                .Replace("#", string.Empty)
+                .Replace("$", string.Empty)
+                .Replace("%", string.Empty)
+                .Replace("^", string.Empty)
+                .Replace("&", string.Empty)
+                .Replace("*", string.Empty)
+                .Replace("(", string.Empty)
+                .Replace(")", string.Empty)
+                .Replace("-", string.Empty)
+                .Replace("_", string.Empty)
+                .Replace("+", string.Empty)
+                .Replace("=", string.Empty)
+                .Replace("\\", string.Empty)
+                .Replace("|", string.Empty)
+                .Replace(".", string.Empty)
+                .Replace(",", string.Empty);
         }
     }
 }

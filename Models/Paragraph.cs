@@ -1,7 +1,30 @@
 ﻿namespace BuilderWire.Models
 {
-    public class Paragraph
+    public class Paragraph : Base
     {
-        public string Sentence { get; set; }
+        public override string TransformedText
+        {
+            get => Text?
+                .Replace("/", string.Empty)
+                .Replace("`", string.Empty)
+                .Replace("!", string.Empty)
+                .Replace("@", string.Empty)
+                .Replace("#", string.Empty)
+                .Replace("$", string.Empty)
+                .Replace("%", string.Empty)
+                .Replace("^", string.Empty)
+                .Replace("&", string.Empty)
+                .Replace("*", string.Empty)
+                .Replace("(", string.Empty)
+                .Replace(")", string.Empty)
+                .Replace("-", string.Empty)
+                .Replace("_", string.Empty)
+                .Replace("+", string.Empty)
+                .Replace("=", string.Empty)
+                .Replace("\\", string.Empty)
+                .Replace("|", string.Empty)
+                .Replace(".", string.Empty)
+                .Replace(",", string.Empty);
+        }
     }
 }
